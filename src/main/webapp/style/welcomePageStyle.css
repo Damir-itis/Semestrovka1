@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Open Sans Condensed Bold;
+    src: url(./fonts/OpenSans.ttf);
+}
+
+img {
+    margin-top: 15%;
+    width: 400px;
+}
+
+h1 {
+    font: 24pt Open Sans Condensed Bold;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#toSignInBtn {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #1300ff;
+    font: 14pt Open Sans Condensed Bold;
+    color: white;
+}
+
+body {
+    background-color: #eaeaec;
+}

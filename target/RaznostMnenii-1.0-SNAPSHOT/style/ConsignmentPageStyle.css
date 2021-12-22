@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Open Sans Condensed Bold;
+    src: url(/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Open Sans Regular;
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+header{
+    width: 100%;
+    background: #ffffff;
+    height: 152px;
+    font-family: Open Sans Condensed Bold;
+}
+
+#logo {
+    width: 270px;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.menu-sections {
+    width: 600px;
+    margin-top: 17px;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-sections-btns{
+    color: black;
+    text-decoration: none;
+}
+
+.menu-sections-btns:hover {
+    color: #1100ff;
+}
+
+#toSignInBtn {
+    width: 100px;
+    height: 40px;
+    margin-left: 65%;
+    border-radius: 25px;
+    background-color: #1300ff;
+    font: 14pt Open Sans Condensed Bold;
+    color: white;
+}
+
+#current-menu-section {
+    background-color: #1100ff;
+    color: white;
+}
+
+body {
+    background-color: #eaeaec;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.dropdown-consignments {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-consignments {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-consignments a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-consignments a:hover {background-color: #ddd;}
+
+.dropdown-consignments:hover .dropdown-content-consignments {display: block;}
+
+.dropdown-consignments:hover .dropbtn-consignments {background-color: #3e8e41;}
+
+.dropdown-news {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-news {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-news a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-news a:hover {background-color: #ddd;}
+
+.dropdown-news:hover .dropdown-content-news {display: block;}
+
+.dropdown-news:hover .dropbtn-news {background-color: #3e8e41;}
+
+#consignment-name {
+    font-family: Open Sans Condensed Bold;
+}
+
+#consignment-picture {
+    width: 200px;
+    margin: 40px;
+    display: flex;
+    float: left;
+}
+
+p {
+    font-family: Open Sans Regular;
+    margin: 20px;
+}
+
+#leader-image {
+    float: right;
+    width: 300px;
+    margin: 25px;
+}
+
+h2 {
+    font-family: Open Sans Condensed Bold;
+    margin: 25px;
+}
+
+h3 {
+    font-family: Open Sans Condensed Bold;
+}
+
+#comment-area {
+    margin-left: 25px;
+}
+
+#send-button, #clear-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    font: 14pt Open Sans Condensed Bold;
+    color: white;
+}
+
+#send-button {
+    background-color: #1300ff;
+    margin-left: 543px;
+}
+
+#clear-button {
+    background-color: #e53225;
+}

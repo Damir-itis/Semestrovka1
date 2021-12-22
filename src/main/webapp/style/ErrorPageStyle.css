@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Open Sans Condensed Bold;
+    src: url(/fonts/OpenSans-Bold.ttf);
+}
+
+h1 {
+    font-family: Open Sans Condensed Bold;
+}
+
+#error {
+    margin-top: 10%;
+    font-size: 250px;
+    max-height: 250px;
+}
+
+a {
+    font-family: Open Sans Condensed Bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" type="text/css" href="style/signUpPageStyle.css">
+    <script src="js/signUpPage.js"></script>
+</head>
+<body>
+<header>
+    <a href="/homePage"><img src="/img/RaznostMneniiPNG.png" id="logo"></a>
+    <a href="/ProfileServlet"><button id="toSignInBtn">Войти</button></a>
+    <div class="menu-sections">
+        <div class="dropdown-news">
+            <a class="menu-sections-btns" id="dropbtn-news" href="/homePage">ГЛАВНАЯ</a>
+            <div class="dropdown-content-news">
+                <a href="/homePage?id=1">Единая Россия</a>
+                <a href="/homePage?id=2">КПРФ</a>
+                <a href="/homePage?id=3">ЛДПР</a>
+                <a href="/homePage?id=4">СР</a>
+            </div>
+        </div>
+        <a class="menu-sections-btns" href="/GovernmentPageServlet">ГОСУСТРОЙСТВО</a>
+        <a class="menu-sections-btns" href="/GosdumaPageServlet">ГОСДУМА</a>
+        <div class="dropdown-consignments">
+            <a class="menu-sections-btns" id="dropbtn-consignments" href="#">ПАРТИИ</a>
+            <div class="dropdown-content-consignments">
+                <a href="/ConsignmentPage?id=1">Единая Россия</a>
+                <a href="/ConsignmentPage?id=2">КПРФ</a>
+                <a href="/ConsignmentPage?id=3">ЛДПР</a>
+                <a href="/ConsignmentPage?id=4">СР</a>
+            </div>
+        </div>
+        <a class="menu-sections-btns" href="/PutinPageServlet">ПУТИН</a>
+        <a class="menu-sections-btns" href="/RegionsPageServlet">РЕГИОНЫ</a>
+
+    </div>
+</header>
+<div class="signUpView">
+    <h1>Вход</h1>
+    <form method="post" action="/signUpPage">
+        <input class="fields" id="username" type="text" name="username" placeholder="Имя пользователя" onblur="checkUsername()">
+        <input class="fields" id="password" type = "password" name="password" placeholder="Пароль" onkeyup="checkPasswordLength()"><br>
+        <input class="fields" id="second-password" type = "password" name="password" onkeyup="checkTwoPasswords()" placeholder="Подтвердите пароль"><br>
+        <label><input name="radio" type="radio" value="true">Запомнить меня</label><br>
+        <button id="login" type="submit" class="btn" disabled>Зарегистрироваться</button>
+    </form>
+    <label>Уже есть аккаунт?</label>
+    <a href="/signInPage">Войдите!</a><br>
+    <span class="error" id="username-error">Неподходящее имя пользователя!</span><br>
+    <span class="error" id="empty_password-error">В пароле должно быть не менее 6 символов!</span><br>
+    <span class="error" id="passwords-confirm-error">Пароли не совпадают!</span><br>
+</div>
+</body>
+</html>
